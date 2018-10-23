@@ -1,55 +1,65 @@
 public class Payroll
 {
-  private int [] employeeId = {5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 7580489};
-  private final int NUM_0F_EMPLOYEES = employeeId.length;
-  private int [] hours;
-  private double [] payRate;
-  private double [] wages;
-
+  private int[] employeeId = {5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 7580489};
+  private final int NUMBER_OF_EMPLOYEES = employeeId.length;
+  private int[] hours;
+  private double[] payRate;
+  private double[] wages;
+  
   public void calculateWages()
   {
-    for(int employeeIndex = 0; employeeIndex < NUM_OF_EMPLOYEES; employeeIndex++)
+    for(int i = 0; i < NUMBER_OF_EMPLOYEES; i++)
     {
-      wages[employeeIndex] = hours[employeeIndex] * payRate[employeeIndex];
-    } 
+      wages[i] = hours[i] * payRate[i];
+    }
   }
-
+  
   public double getWagesById(int employeeIdGiven)
   {
-    for(int employeeIndex = 0; employeeIndex < NUM_OF_EMPLOYEES; employeeIndex++)
+    for(int i = 0; i < NUMBER_OF_EMPLOYEES; i++)
     {
-      if(employeeId[employeeIndex] == employeeIdGiven)
+      if(employeeId[i] == employeeIdGiven)
       {
-        return wages[employeeIndex];
+        return wages[i];
       }
     }
     return -1;
   }
-  
-  public int [] getAllEmployeeIds()
+   
+  public Payroll()
+  {
+    hours   = new int[NUMBER_OF_EMPLOYEES];
+    payRate = new double[NUMBER_OF_EMPLOYEES];
+    wages   = new double[NUMBER_OF_EMPLOYEES];
+  }
+
+  public int[] getEmployeeIds()
   {
     return employeeId;
   }
 
-  public int [] getAllEmployeeHours()
+  public int[] getEmployeeHours()
   {
     return hours;
   }
 
-  public double [] getAllEmployeePayRates()
+  public double[] getEmployeePay()
   {
     return payRate;
   }
-  
-  public double [] getAllEmployeeWages()
+
+  public double[] getEmployeeWages()
   {
     return wages;
   }
-
-  public Payroll()
+  
+  public void setEmployeeHours(int employeeHours,int employeeIndex)
   {
-    hours   = new int [NUM_OF_EMPLOYEES];
-    payRate = new double[NUM_OF_EMPLOYEES];
-    wages   = new double[NUM_OF_EMPLOYEES];
+    hours[employeeIndex] = employeeHours;
+  }
+  
+  public void setEmployeePayRate(double employeePayRate,int employeeIndex)
+  {
+    payRate[employeeIndex] = employeePayRate;
   }
 }
