@@ -1,6 +1,6 @@
 public class Rainfall
 {
-  double [] rainfallStats;
+  private double [] rainfallStats;
   
   public double getTotalRainfall()
   {
@@ -17,36 +17,30 @@ public class Rainfall
     return getTotalRainfall() / 12.0;
   }
   
-  public int getMostRain()
+  public double getMostRain()
   {
     double mostRain = rainfallStats[0];
-    int mostRainMonth = 1;
-    
-    for(int i = 0; i < rainfallStats.length; i++)
+    for (int i = 1; i < rainfallStats.length; i++)
     {
       if (rainfallStats[i] > mostRain)
       {
         mostRain = rainfallStats[i];
-        mostRainMonth = i + 1;
       }
     }
-    return mostRainMonth;
+    return mostRain;
   }
 
-  public int getLeastRain()
+  public double getLeastRain()
   {
     double leastRain = rainfallStats[0];
-    int leastRainMonth = 1;
-    
-    for(int i = 0; i < rainfallStats.length; i++)
+    for (int i = 1; i < rainfallStats.length; i++)
     {
       if (rainfallStats[i] < leastRain)
       {
         leastRain = rainfallStats[i];
-        leastRainMonth = i + 1;
       }
     }
-    return leastRainMonth;
+    return leastRain;
   }
   
   public Rainfall(double[] arrayGiven)
