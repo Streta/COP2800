@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="DistanceTraveledController">
+  <children>
+    <TextField fx:id="speedTextField" layoutX="150.0" layoutY="26.0" prefWidth="120.0" />
+    <Label fx:id="outputLabel" layoutX="31.0" layoutY="61.0" prefWidth="238.0" />
+    <Label fx:id="speedPromptLabel" layoutX="32.0" layoutY="29.0" text="Enter the car's speed:" />
+    <Button fx:id="distance5Button" layoutX="31.0" layoutY="100.0" mnemonicParsing="false" onAction="#distance5ButtonListener" prefWidth="240.0" text="Display the Distance Traveled in 5 Hours" />
+    <Button fx:id="distance8Button" layoutX="31.0" layoutY="129.0" mnemonicParsing="false" onAction="#distance8ButtonListener" prefWidth="241.0" text="Display the Distance Traveled in 8 Hours" />
+    <Button fx:id="distance12Button" layoutX="32.0" layoutY="159.0" mnemonicParsing="false" onAction="#distance12ButtonListener" text="Display the Distance Traveled in 12 Hours" />
+  </children>
+</AnchorPane>

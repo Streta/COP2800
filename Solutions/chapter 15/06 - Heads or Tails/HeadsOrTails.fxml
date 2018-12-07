@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="290.0" xmlns:fx="http://javafx.com/fxml" fx:controller="HeadsOrTailsController">
+  <children>
+    <ImageView id="coinImageView" fx:id="coinImage" fitHeight="256.0" fitWidth="256.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <Button fx:id="tossButton" layoutX="110.0" layoutY="296.0" mnemonicParsing="false" onAction="#tossButtonListener" text="Toss Coin" />
+  </children>
+</AnchorPane>

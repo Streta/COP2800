@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="436.0" xmlns:fx="http://javafx.com/fxml" fx:controller="SlotMachineSimulationController">
+  <children>
+    <ImageView fx:id="row1col1ImageView" fitHeight="128.0" fitWidth="128.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row1col2ImageView" fitHeight="128.0" fitWidth="128.0" layoutX="154.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row1col3ImageView" fitHeight="128.0" fitWidth="128.0" layoutX="294.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="amountBetPromptLabel" layoutX="14.0" layoutY="154.0" text="Amount Inserted: $" />
+    <TextField fx:id="amountBetTextField" layoutX="118.0" layoutY="151.0" prefWidth="62.0" />
+    <Label fx:id="amountWonDescriptionLabel" layoutX="216.0" layoutY="154.0" text="Amount Won This Spin $" />
+    <Label fx:id="totalWinningsDescriptionLabel" layoutX="237.0" layoutY="173.0" text="Total Amount Won $" />
+    <Label fx:id="outputAmountWonLabel" layoutX="355.0" layoutY="154.0" prefWidth="67.0" />
+    <Label fx:id="outputTotalWinningsLabel" layoutX="355.0" layoutY="173.0" prefWidth="67.0" />
+    <Button fx:id="spinButton" layoutX="190.0" layoutY="201.0" mnemonicParsing="false" onAction="#spinButtonListener" text="Spin" />
+    <Label id="displayLabel" fx:id="displayInfoLabel" layoutX="14.0" layoutY="203.0" prefWidth="166.0" />
+  </children>
+</AnchorPane>

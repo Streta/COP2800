@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="272.0" xmlns:fx="http://javafx.com/fxml" fx:controller="TicTacToeSimulatorController">
+  <children>
+    <ImageView fx:id="row1col1ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row1col2ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="98.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row1col3ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="182.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row2col1ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row2col2ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="98.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row2col3ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="182.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row3col1ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="15.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row3col2ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="98.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="row3col3ImageView" fitHeight="75.0" fitWidth="75.0" layoutX="182.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="outputLabel" alignment="CENTER" layoutX="29.0" layoutY="275.0" prefWidth="214.0" />
+    <Button fx:id="newGameButton" layoutX="96.0" layoutY="307.0" mnemonicParsing="false" onAction="#newGameButtonListener" text="New Game" />
+  </children>
+</AnchorPane>

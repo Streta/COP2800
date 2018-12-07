@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="340.0" xmlns:fx="http://javafx.com/fxml" fx:controller="NameFormatterController">
+  <children>
+    <Button id="format6Button" fx:id="format1Button" layoutX="52.0" layoutY="163.0" mnemonicParsing="false" onAction="#format1ButtonListener" text="Format 1" />
+    <Button id="format1Button" fx:id="format2Button" layoutX="136.0" layoutY="163.0" mnemonicParsing="false" onAction="#format2ButtonListener" text="Format 2" />
+    <Button id="format2Button" fx:id="format3Button" layoutX="216.0" layoutY="163.0" mnemonicParsing="false" onAction="#format3ButtonListener" text="Format 3" />
+    <Button id="format3Button" fx:id="format4Button" layoutX="52.0" layoutY="199.0" mnemonicParsing="false" onAction="#format4ButtonListener" text="Format 4" />
+    <Button id="format4Button" fx:id="format5Button" layoutX="136.0" layoutY="199.0" mnemonicParsing="false" onAction="#format5ButtonListener" text="Format 5" />
+    <Button id="format5Button" fx:id="format6Button" layoutX="216.0" layoutY="199.0" mnemonicParsing="false" onAction="#format6ButtonListener" text="Format 6" />
+    <Label fx:id="outputLabel" alignment="CENTER" layoutX="24.0" layoutY="135.0" prefWidth="296.0" />
+    <Label id="outputLabel" fx:id="firstNamePromptLabel" layoutX="24.0" layoutY="20.0" prefWidth="86.0" text="First Name:" />
+    <Label id="outputLabel" fx:id="middleNamePromptLabel" layoutX="23.0" layoutY="49.0" prefWidth="86.0" text="Middle Name:" />
+    <Label id="outputLabel" fx:id="lastNamePromptLabel" layoutX="23.0" layoutY="76.0" prefWidth="86.0" text="Last Name:" />
+    <Label id="outputLabel" fx:id="titlePromptLabel" layoutX="24.0" layoutY="104.0" prefWidth="84.0" text="Preferred Title:" />
+    <TextField fx:id="firstNameTextField" layoutX="120.0" layoutY="17.0" prefWidth="200.0" />
+    <TextField fx:id="middleNameTextField" layoutX="120.0" layoutY="46.0" prefWidth="200.0" />
+    <TextField fx:id="lastNameTextField" layoutX="120.0" layoutY="73.0" prefWidth="200.0" />
+    <TextField fx:id="titleTextField" layoutX="120.0" layoutY="101.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

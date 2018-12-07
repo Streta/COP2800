@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="TipTaxAndTotalController">
+  <children>
+    <Label fx:id="chargePromptLabel" layoutX="23.0" layoutY="31.0" text="Enter the food charge:" />
+    <TextField fx:id="chargeTextField" layoutX="150.0" layoutY="28.0" prefWidth="118.0" />
+    <Label id="tipOutputLabel" fx:id="outputTipLabel" layoutX="23.0" layoutY="59.0" />
+    <Label id="tipOutputLabel" fx:id="outputTaxLabel" layoutX="23.0" layoutY="82.0" />
+    <Label id="tipOutputLabel" fx:id="outputTotalLabel" layoutX="23.0" layoutY="103.0" />
+    <Button fx:id="calculateButton" layoutX="116.0" layoutY="139.0" mnemonicParsing="false" onAction="#calculateButtonListener" text="Calculate" />
+  </children>
+</AnchorPane>

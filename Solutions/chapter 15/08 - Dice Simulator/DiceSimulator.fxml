@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="DiceSimulatorController">
+  <children>
+    <ImageView id="die1Image" fx:id="dieImage1" fitHeight="104.0" fitWidth="104.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="die2Image" fx:id="dieImage2" fitHeight="104.0" fitWidth="104.0" layoutX="152.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+    <Button fx:id="rollButton" layoutX="109.0" layoutY="147.0" mnemonicParsing="false" onAction="#tossButtonListener" text="Roll the Dice" />
+  </children>
+</AnchorPane>
